@@ -23,7 +23,7 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   function jump() {
-    if (birdBottom < 494) birdBottom += 50;
+    if (birdBottom < 500) birdBottom += 50;
     bird.style.bottom = birdBottom + "px";
     console.log(birdBottom);
   }
@@ -33,7 +33,6 @@ document.addEventListener("DOMContentLoaded", () => {
     let obstacleLeft = 500;
     let randomHeight = Math.random() * 60;
     let obstacleBottom = randomHeight;
-
     const obstacle = document.createElement("div");
     const topObstacle = document.createElement("div");
     if (!isGameOver) {
